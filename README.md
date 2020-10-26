@@ -1,7 +1,7 @@
 # chat
 A small chat webapp using websockets
 
-The app runs using [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/). To start it up simply clone it and run the `./compose.sh` script. The app uses ports 443 and 5000, so these need to be open.
+The app runs using [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/). To start it up simply clone it and run the `./compose.sh` script. The app uses ports 80, 443, and 5000, so these need to be open.
 
 By default the app uses the secure protocols https and wss, and the repository contains self-signed certificates that will not be trusted by any reasonable peice of software without specific settings. To deploy the app, you can generate your own certificate and private key, e.g. with [Let's Encrypt](https://letsencrypt.org/).
 
