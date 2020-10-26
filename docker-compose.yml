@@ -1,0 +1,14 @@
+version: "2.2"
+services:
+    chat:
+        build: .
+        ports:
+            - "5000:5000"
+    nginx:
+        image: nginx
+        ports:
+            - "443:443"
+        volumes:
+            - ./src:/etc/nginx/html
+            - ./ssl:/etc/ssl
+            - ./nginx/conf.d:/etc/nginx/conf.d
